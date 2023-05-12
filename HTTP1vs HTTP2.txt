@@ -1,0 +1,17 @@
+HTTP1 is the most widely used version of HTTP. It was introduced in 1999 and has been the standard protocol for the web for over two decades. 
+HTTP1 is a request-response protocol,which means that each request from the client is followed by a response from the server.
+HTTP2 is the successor to HTTP1 It was introduced in 2015 and is designed to address some of the performance issues of its predecessor. 
+One of the key features of HTTP2 is that it allows multiple requests to be sent over a single TCP connection. This is achieved through a technique 
+called "multiplexing", which allows multiple requests and responses to be sent and received simultaneously
+One of the biggest issues with HTTP1 is its performance. HTTP1 only allows one request at a time per TCP connection. This means that if a web page 
+has multiple resources, such as images, stylesheets, and scripts, the browser has to open multiple connections to the server to retrieve all the resources. 
+This process is known as "head-of-line blocking" and can lead to slow page load times
+Another significant improvement in HTTP2 is the introduction of server push. In HTTP1, the client has to make a separate request for each resource, which can be slow.
+With server push, the server can send resources to the client before the client requests them, thereby reducing page load times.
+HTTP2 also includes other performance optimizations, such as header compression and binary framing, which help to reduce the amount of data sent over the 
+network and improve performance.
+1.Multiplexing: HTTP2 allows multiple requests to be sent over a single TCP connection, which reduces latency and improves performance.
+2.Server push: HTTP2 allows the server to send resources to the client before the client requests them, which reduces page load times.
+3.Binary framing: HTTP2 uses a binary protocol rather than a text-based protocol like HTTP1, which reduces the size of the data sent over the network.
+4.Header compression: HTTP2 compresses the headers of the requests and responses, which reduces the amount of data sent over the network.
+5.Prioritization: HTTP2 allows requests to be prioritized, which ensures that important requests are processed first.
